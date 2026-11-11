@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;800&display=swap");
+:root {
+  /* Aventura Frontiers palette (from AVENTURA_MASTER) */
+  --chat--color-primary: #8B35C8;            /* Aventura vivid purple */
+  --chat--color-primary-shade-50: #6B3D90;   /* hover */
+  --chat--color-primary-shade-100: #3D1166;  /* active */
+  --chat--color-secondary: #E91E8C;          /* fuchsia accent */
+  --chat--color-secondary-shade-50: #C2187A;
+  --chat--color-white: #ffffff;
+  --chat--color-light: #FBF7F0;              /* cream panel */
+  --chat--color-light-shade-50: #EDE4FF;     /* borders */
+  --chat--color-light-shade-100: #F0E8FF;    /* muted borders */
+  --chat--color-medium: #d1d5db;
+  --chat--color-dark: #1A0A2E;               /* purple-black text */
+  --chat--color-disabled: #e5e7eb;
+  --chat--color-typing: #6B3D90;             /* muted text */
+
+  /* Base Layout (rounded like cards in template) */
+  --chat--spacing: 1rem;
+  --chat--border-radius: 0.75rem;            /* ≈12px */
+  --chat--transition-duration: 0.15s;
+  --chat--font-family: "Archivo", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  /* Window */
+  --chat--window--width: 400px;
+  --chat--window--height: 600px;
+  --chat--window--bottom: var(--chat--spacing);
+  --chat--window--right: var(--chat--spacing);
+  --chat--window--z-index: 9999;
+  --chat--window--border: 1px solid var(--chat--color-light-shade-50);
+  --chat--window--border-radius: var(--chat--border-radius);
+  --chat--window--margin-bottom: var(--chat--spacing);
+
+  /* Header (light, bordered, matches the page header) */
+  --chat--header-height: auto;
+  --chat--header--padding: var(--chat--spacing);
+  --chat--header--background: var(--chat--color-white);
+  --chat--header--color: var(--chat--color-dark);
+  --chat--header--border-top: none;
+  --chat--header--border-bottom: 1px solid var(--chat--color-light-shade-50);
+  --chat--header--border-left: none;
+  --chat--header--border-right: none;
+  --chat--heading--font-size: 1.125rem;      /* 18px, tidy */
+  --chat--subtitle--font-size: 0.875rem;
+  --chat--subtitle--line-height: 1.6;
+
+  /* Messages (white cards for bot, brand chips for user) */
+  --chat--message--font-size: 0.95rem;
+  --chat--message--padding: calc(var(--chat--spacing) * 0.85);
+  --chat--message--border-radius: var(--chat--border-radius);
+  --chat--message-line-height: 1.5;
+  --chat--message--margin-bottom: var(--chat--spacing);
+
+  --chat--message--bot--background: var(--chat--color-white);
+  --chat--message--bot--color: var(--chat--color-dark);
+  --chat--message--bot--border: 1px solid var(--chat--color-light-shade-50);
+
+  --chat--message--user--background: var(--chat--color-primary);
+  --chat--message--user--color: var(--chat--color-white);
+  --chat--message--user--border: none;
+
+  --chat--message--pre--background: #F0E8FF; /* subtle code bg */
+  --chat--messages-list--padding: var(--chat--spacing);
+
+  /* Toggle FAB (brand) */
+  --chat--toggle--size: 56px;
+  --chat--toggle--width: var(--chat--toggle--size);
+  --chat--toggle--height: var(--chat--toggle--size);
+  --chat--toggle--border-radius: 50%;
+  --chat--toggle--background: var(--chat--color-primary);
+  --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+  --chat--toggle--color: var(--chat--color-white);
+
+  /* Input Area (clean, card-like with border top) */
+  --chat--textarea--height: 54px;
+  --chat--textarea--max-height: 30rem;
+  --chat--input--font-size: 0.95rem;
+  --chat--input--border: 1px solid var(--chat--color-light-shade-50);
+  --chat--input--border-radius: calc(var(--chat--border-radius) - 0.25rem);
+  --chat--input--padding: 0.9rem;
+  --chat--input--background: var(--chat--color-white);
+  --chat--input--text-color: var(--chat--color-dark);
+  --chat--input--line-height: 1.45;
+  --chat--input--placeholder--font-size: var(--chat--input--font-size);
+  --chat--input--border-active: 1px solid var(--chat--color-primary);
+  --chat--input--left--panel--width: 2rem;
+
+  /* Buttons (brand primary) */
+  --chat--button--color: var(--chat--color-white);
+  --chat--button--background: var(--chat--color-primary);
+  --chat--button--padding: calc(var(--chat--spacing) * 0.5) var(--chat--spacing);
+  --chat--button--border-radius: 0.625rem;
+  --chat--button--hover--color: var(--chat--color-white);
+  --chat--button--hover--background: var(--chat--color-primary-shade-50);
+  --chat--close--button--color-hover: var(--chat--color-primary);
+
+  /* Send & File Buttons (subtle brand accent) */
+  --chat--input--send--button--background: var(--chat--color-white);
+  --chat--input--send--button--color: var(--chat--color-primary);
+  --chat--input--send--button--background-hover: var(--chat--color-light);
+  --chat--input--send--button--color-hover: var(--chat--color-primary-shade-50);
+
+  --chat--input--file--button--background: var(--chat--color-white);
+  --chat--input--file--button--color: var(--chat--color-dark);
+  --chat--input--file--button--background-hover: var(--chat--color-light);
+  --chat--input--file--button--color-hover: var(--chat--color-primary);
+
+  --chat--files-spacing: 0.25rem;
+  
+  /* Surfaces */
+  --chat--body--background: var(--chat--color-light);
+  --chat--footer--background: var(--chat--color-white);
+  --chat--footer--color: var(--chat--color-dark);
+}

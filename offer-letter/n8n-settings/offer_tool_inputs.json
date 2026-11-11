@@ -1,0 +1,17 @@
+{
+  "candidate_name": "Priya Shah",
+  "role_title": "People Analytics Manager",
+  "start_date": "2027-01-11",
+  "hiring_manager_name": "Jordan Lee",
+  "hiring_manager_email": "jordan.lee@example.com",
+  "grade": "G3",
+  "grade_title": "Manager / Lead",
+  "base_salary": 118000,
+  "joining_bonus": 8000,
+  "relocation": "domestic",
+  "relocation_amount": 5000,
+  "ld_grant": 2000,
+  "first_year_total": 133000,
+  "approval_route": "Hiring manager and VP People (base salary is above the grade midpoint)",
+  "expectation_note": "The candidate expects $125,000, which is $7,000 above the proposed base salary. The hiring manager decides."
+}
