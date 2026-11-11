@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Offer Letter: Aventura Frontiers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --purple: #8B35C8;
+    --fuchsia: #E91E8C;
+    --ink: #1A0A2E;
+    --muted: #6B3D90;
+    --card: #F0E8FF;
+    --border: #EDE4FF;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px; color: var(--ink); background: var(--white);
+    font: 15px/1.6 "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .draft {
+    border: 2px solid var(--fuchsia); border-radius: 10px; padding: 10px 14px;
+    font-weight: 800; color: var(--ink); text-align: center; margin-bottom: 24px;
+  }
+  header { display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    border-bottom: 3px solid var(--purple); padding-bottom: 16px; margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 56px; height: 56px; }
+  .brand-name { font-weight: 800; font-size: 22px; color: var(--purple); }
+  .meta { text-align: right; font-size: 13px; color: var(--muted); }
+  .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; font-weight: 500; }
+  h1 { font-size: 26px; font-weight: 800; margin: 0 0 16px; }
+  .card { background: var(--card); border-radius: 12px; padding: 18px 20px; margin: 20px 0; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 10px 4px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  th { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 500; }
+  td.right, th.right { text-align: right; }
+  tfoot td { border-top: 2px solid var(--purple); border-bottom: none; font-weight: 800; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  .sign { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
+  .line { border-top: 1px solid var(--ink); padding-top: 6px; font-size: 13px; color: var(--muted); margin-top: 48px; }
+  footer { text-align: center; font-size: 12px; color: var(--muted); margin-top: 32px; }
+  @media print { body { padding: 0; } .card { break-inside: avoid; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="draft">DRAFT FOR APPROVAL. Not yet sent to the candidate.</div>
+
+    <header>
+      <div class="brand">
+        <img src="https://raw.githubusercontent.com/aarti-mudaliar/build_AI_agents_with-n8n-4103420/main/offer-letter/assets/aventura-logo.png" alt="Aventura Frontiers logo" />
+        <div class="brand-name">Aventura Frontiers</div>
+      </div>
+      <div class="meta">
+        <div><span class="label">Offer</span> O-261111-211340</div>
+        <div><span class="label">Date</span> 2026-11-11</div>
+        <div><span class="label">Respond by</span> 2026-11-18</div>
+      </div>
+    </header>
+
+    <h1>Offer of employment</h1>
+
+    <p>Dear Elena Petrova,</p>
+
+    <p>We're delighted to offer you the role of <strong>Senior Manager, Talent Acquisition</strong> at Aventura Frontiers, starting on <strong>2027-03-15</strong>. You'll report to Marcus Bell.</p>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Your package</th>
+            <th class="right">Amount (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Base salary</strong>, per year<br/><span class="label">Grade G4, Senior Manager</span></td>
+            <td class="right">$150,000</td>
+          </tr>
+          <tr>
+            <td>Joining bonus, paid once in your first paycheck</td>
+            <td class="right">$12,000</td>
+          </tr>
+          <tr>
+            <td>Relocation support, paid once (domestic)</td>
+            <td class="right">$5,000</td>
+          </tr>
+          <tr>
+            <td>Learning and development grant, per year</td>
+            <td class="right">$2,500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total value in your first year</td>
+            <td class="right">$169,500</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <p class="label">Also included</p>
+    <ul>
+      <li>Medical, dental and vision cover from your first day</li>
+      <li>20 days of paid time off a year, plus public holidays</li>
+      <li>401(k) retirement plan with a company match of 4% of base salary</li>
+      <li>Hybrid working: three days in the office, two days from home</li>
+    </ul>
+
+    <p>This offer includes a 90-day probation period. After probation, the notice period is 4 weeks from either side.</p>
+
+    <p>Please confirm by <strong>2026-11-18</strong>. If you have questions, email us at people@aventurafrontiers.com.</p>
+
+    <p>We're looking forward to working with you.</p>
+
+    <div class="sign">
+      <div>
+        <div class="line">Marcus Bell, for Aventura Frontiers</div>
+      </div>
+      <div>
+        <div class="line">Elena Petrova, accepted on (date)</div>
+      </div>
+    </div>
+
+    <footer>Aventura Frontiers &middot; Sample offer letter generated for a training build</footer>
+  </div>
+</body>
+</html>
